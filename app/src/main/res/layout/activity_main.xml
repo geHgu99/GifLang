@@ -20,7 +20,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        app:layout_constraintBottom_toTopOf="@+id/BestFragmentButton"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +28,7 @@
         android:id="@+id/LastFragmentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="100dp"
         android:text="@string/LastButton"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,11 +38,12 @@
         android:id="@+id/BestFragmentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="564dp"
         android:text="@string/BestButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/HotFragmentButton"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toEndOf="@+id/LastFragmentButton"
-        tools:layout_editor_absoluteY="119dp" />
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toEndOf="@+id/LastFragmentButton" />
 
     <Button
         android:id="@+id/HotFragmentButton"
@@ -52,7 +52,7 @@
         android:layout_marginTop="100dp"
         android:text="@string/HotButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintStart_toStartOf="@id/LastFragmentButton"
         app:layout_constraintTop_toBottomOf="@+id/accountChoiseButton" />
 
