@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GifLang</string>
+    <string name="AccountButton">Account</string>
+    <string name="LastButton">Last</string>
+    <string name="BestButton">Best</string>
+    <string name="HotButton">Hot</string>
 </resources>
