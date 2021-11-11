@@ -8,10 +8,13 @@
 
     <ImageButton
         android:id="@+id/accountChoiseButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="@string/AccountButton"
-        app:layout_constraintEnd_toStartOf="@+id/tittleTextView"
+        android:minWidth="32dp"
+        android:minHeight="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,51 +22,71 @@
         android:id="@+id/tittleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Hello World!"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/LastFragmentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
         android:text="@string/LastButton"
+        app:layout_constraintEnd_toStartOf="@+id/BestFragmentButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/accountChoiseButton" />
+        app:layout_constraintTop_toBottomOf="@+id/tittleTextView" />
 
     <Button
         android:id="@+id/BestFragmentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="564dp"
+        android:layout_marginTop="56dp"
         android:text="@string/BestButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/HotFragmentButton"
-        app:layout_constraintHorizontal_bias="0.386"
-        app:layout_constraintStart_toEndOf="@+id/LastFragmentButton" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittleTextView" />
 
     <Button
         android:id="@+id/HotFragmentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/HotButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
-        app:layout_constraintStart_toStartOf="@id/LastFragmentButton"
-        app:layout_constraintTop_toBottomOf="@+id/accountChoiseButton" />
+        app:layout_constraintStart_toEndOf="@+id/BestFragmentButton"
+        app:layout_constraintTop_toBottomOf="@+id/tittleTextView" />
 
     <ImageView
         android:id="@+id/GifImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BestFragmentButton" />
 
+    <Button
+        android:id="@+id/RefreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/RefreshButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GifImageView" />
 
+    <Button
+        android:id="@+id/NextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/NextButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GifImageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

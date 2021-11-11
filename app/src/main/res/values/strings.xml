@@ -4,4 +4,6 @@
     <string name="LastButton">Last</string>
     <string name="BestButton">Best</string>
     <string name="HotButton">Hot</string>
+    <string name="RefreshButton">Refresh</string>
+    <string name="NextButton">Next</string>
 </resources>
